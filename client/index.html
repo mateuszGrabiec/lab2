@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" media="only screen" href="style.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my page</h1>
+    </header>
+    <div class="project-wrapper" style="margin-top: 80px">
+      <div class="project-describe">
+      <img src="projects/RPS.PNG"/>
+      <p>
+        <strong>Rock, paper, scissors</strong> is a project which helps me to learn about real-time web applications. Part of the code comes from 
+        <a href="https://www.youtube.com/watch?v=xVcVbCLmKew" style="color: skyblue">here.</a> This tutorial was of valuable assistance. Especially as I didn't know node.js at all. 
+        I chose this tool because I would have to refresh all clients' sites periodically in PHP enviroment. The app is based on sockets.
+        My next goal is to add rankings, play with friends etc.
+      </p> 
+      </div>
+      <div class="clear"></div>
+      <div class="project-footer">
+        <button id="startGame"><a href="rps.html" class="button">Start game as guest</a></button>
+        <button id="logIn" class="button" onclick="alert('Not scripted yet :( ')">Play as user</button>
+      </div>
+    </div>
+
+    <div class="project-wrapper">
+        <div class="project-describe">
+            <img src="projects/checkers.PNG"/>
+      <p><strong>Checkers</strong> was written to get a pass from methodology of programming. Our task was to write a simple game. 
+        The funny thing is that I didn't know the rules of this game. So implementing some of them was quite a hard task.
+        I'm beginner in graphics so white pawns is "o"/"@" and black is "x"/"X". The pogramme is based on WPF, language applied is C#. WSIWYG in 
+        visual studio was a very helpful tool when I was creating the menu. Unfortunately, I didn't manage to programme a saving game function
+        because the deadline was close and when I finished I started work on new projects.
+
+      </p> 
+        </div>
+        <div class="clear"></div>
+        <div class="project-footer">
+          <button id="startGame"><a href="https://mgrabiec.usermd.net/checkers/warcaby1.11.exe" class="button">Download checkers</a></button>
+        </div>
+    </div>
+
+    <div class="project-wrapper">
+        <div class="project-describe">
+        <img src="projects/gallows.PNG"/>
+        <p><strong>Hangman</strong>, in this game we have to guess a word which was invented by another person. Unlike other projects 
+          a huge part comes from <a href="https://www.youtube.com/watch?v=9FVtiJHFCSU" style="color: skyblue">a tutorial.</a> I wrote the
+          category function and made this game responsive, so you can play it on your mobile phone. Writing this game helped me
+          to understand Java Script.
+        </p>
+        </div>
+        <div class="clear"></div>
+        <div class="project-footer">
+          <button id="startGame"><a href="https://mgrabiec.usermd.net/hangman/hangman.html" class="button">Play hangman</a></button>
+        </div>
+    </div>
+
+  </body>
+</html>

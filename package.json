@@ -1,0 +1,17 @@
+{
+  "name": "public_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon public_nodejs/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MG",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0"
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RPS</title>
+		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" media="only screen" href="rps-style.css" type="text/css">
+	</head>
+	<body>
+	<div class="game-wrapper">
+	<div class="score">
+	
+		<table class="score-table">
+			<tr>
+				<td>You: </td>
+				<td id="score-p1">0&nbsp;</td>
+			</tr>
+			<tr>
+				<td>Foe: </td>
+				<td id="score-p2">0&nbsp;</td>
+			</tr>
+		</table>
+	
+		<p id="score-getter"></p>
+	</div>
+		<div class="rps-wrapper">
+		<ul id="events">
+		</ul>
+		
+		<div class="chat-wrapper">
+			<form id="chat-form">
+				<input id="chat">
+				<button id="say">Say</button>
+			</form>
+		</div>
+
+		<div class="button-wrapper">
+			<button id="rock"><img src="rps-png/rock.png" height="50" width="50"></button>
+			<button id="paper"><img src="rps-png/paper.png" height="50" width="50"></button>
+			<button id="scissors"><img src="rps-png/scissors.png" height="50" width="50"></button>	
+		</div>
+		
+		</div>
+	<div class="clock">
+	<div id="tens">
+		<img src="nums/0.png" >
+	</div>
+	<div id="unity">
+		<img src="nums/0.png" >
+	</div>
+		<p id="clock-getter"></p>
+	</div>
+	
+	<div class="endGame-wrapper">
+	<div class="playAgain">
+		<p>Choose one option:</p>
+		<button id="newGame">New Game</button>
+		<button id="backToLobby"><a href="index.html" class="button">Back To Lobby</a></button>
+	</div>
+	</div>
+	
+	</div>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/client.js"></script>
+	</body>
+</html>

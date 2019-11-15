@@ -1,0 +1,168 @@
+html, 
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color:#646464;
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width:100%;
+}
+input {
+  outline: none;
+  font-size: 1.0rem;
+  padding: 0 5px;
+}
+button {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 3px 15px;
+  color: white;
+  line-height: 25px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+  transition: all 150ms ease-in;
+  outline: none;
+}
+
+button:hover {
+    background-color: #79d7e4;
+}
+
+.rps-wrapper {
+  float:left;
+  max-width: 58%;
+  height: 100%;
+  max-height: 400px;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+}
+#events {
+  flex-grow: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid lightgrey;
+  overflow-y: scroll;
+}
+
+#events li {
+  padding: 10px 10px 10px 10px;
+  font-size:1.5em;
+}
+
+.chat-wrapper {
+  padding: 10px;
+}
+
+.chat-wrapper form {
+  width:100%;
+  display: flex;
+}
+
+.chat-wrapper form input {
+  font-size: 1.0rem;
+  margin: 0 10px 0 0;
+  padding: 0 5px;
+  flex-grow: 1;
+}
+
+.chat-wrapper form button {
+  width: 80px;
+}
+
+.button-wrapper {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-evenly;
+}
+.clock{
+  margin: 1% 1% 1% 2%;
+  padding:1% 1% 1% 1%;
+  background-color:black;
+  border: 3px solid white;
+  border-radius: 30px/10px;
+  float:left;
+  width:10%;
+  height:15%;
+}
+.score{
+  float:left;
+  width:25%;
+}
+.endGame-wrapper{
+  padding:1% 1% 1% 1%;
+  background-color:white;
+  position :absolute;
+  display: none;
+  margin-left: 20%;
+  max-width: 48%;
+  max-height:30%;
+  max-height: 400px;
+}
+#tens{
+  float: left;
+  width:49%;
+  height:100%;
+}
+#unity{
+  float:left;
+  width:49%;
+  height:100%;
+}
+.game-wrapper{
+  height:400px;
+  width:80%;
+  margin: 0 auto;
+}
+.score-table{
+    background-color:black;
+    margin:7% 1% 1% 1%;
+    border-collapse: collapse;
+    border-radius: 10px/30px;
+    border-style: hidden;
+    box-shadow: 0 0 0 3px white;
+    float:right;
+    margin-right:5%;
+    height:20%;
+}
+td {
+    color: #d02124;
+    font: bold 1.7em 'Orbitron', sans-serif;
+    border: 3px solid white;
+    padding:7px;
+}
+/* A link that has not been visited */
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+/* A link that has been visited */
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+.serv {
+  color:white;
+  margin:0;
+}
+/* #unity > img{
+  float: left;
+  width: 80%;
+  height: 100%;
+}
+#tens > img{
+  float: right;
+  width: 80%;
+  height: 100%;
+} */
+.clock>div>img {
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+}
