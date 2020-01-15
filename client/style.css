@@ -1,87 +1,154 @@
 html, body{
     margin: 0;
-    padding: 0;
-    height:120%;
+    padding-top: 100px;
+    height:100%;
     width:100%;
-    background: linear-gradient(to top, rgb(105, 105, 105), black) fixed; 
-    font-weight: bold;
-    color:rgb(212, 209, 209);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-button {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 3px 15px;
-    line-height: 25px;
-    background-color: #55d7f7;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
-    transition: all 150ms ease-in;
-    outline: none;
-  }
-  
-button:hover {
-      background-color: #025caf;
-  }
-  /* A link that has not been visited */
-a:link {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+body{
+    top: 0;
+    right: 0;
+    background-color:  black;
+}
+nav{
+  align-items: center;
+  height: 150px;
 }
 
-/* A link that has been visited */
-a:visited {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.navbar-toggle {
+  border: none;
+  outline: none;
 }
-.project-wrapper{
-  border-radius: 3em;
-  -moz-border-radius: 3em;
-  -webkit-border-radius: 3em;
-  border: 12px solid silver;
-  margin:2rem auto;
-  -webkit-box-shadow: 13px 17px 20px -4px rgba(255,255,255,1);
-  -moz-box-shadow: 13px 17px 20px -4px rgba(255,255,255,1);
-  box-shadow: 13px 17px 20px -4px rgba(255,255,255,1);
-  width:75%;
-  padding: 1em 1em 5.5em 1em;
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
 }
-.project-describe{
-    width: 100%;
-    height:60%;
-    font-size:1.5em;
-  }
-  .project-footer{
-    height:50px;
-    width:100%;
-    float: left;
-    margin-top:5px;
-  }
-  img{
-    box-align:left;
-    height:auto;
-    width:60%;
-    margin-right:10px;
-    float:left;
-  }
-  header{
-    background: linear-gradient(to top, rgb(105, 105, 105), black) fixed;
-    position: fixed;
-    top: 0;
-    margin:0;
-    width: 100%;
+
+.logo{
+  width: 150px;
+  height: 150px;
 }
+.main-container{
+  display: grid;
+  grid-template-columns: repeat(3 3fr);
+  justify-content: center;
+}
+.left{
+  width: 20vw;
+  grid-column: 1;
+  align-self: center;
+}
+.middle{
+  grid-column: 2;
+  z-index: 3;
+}
+
+.right{
+  grid-row: 1;
+  width: 20vw;
+  grid-column:3;
+  align-self: top;
+}
+.right img{
+  width: 30vw;
+  margin-left: -8vw;
+  transform: rotate(90deg);
+}
+
+.last{
+  grid-column-end: 4;
+  grid-row-end: 2;
+  align-self: end;
+}
+
+.card{
+  width: 50vw;
+}
+
 p{
+  font-size: 2rem;
+  color:rgb(212, 209, 209);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin:5px;
 }
-.clear{
-  clear:both;
+
+.last img{
+  width: 20vw;
+  align-self: end;
 }
-h1{
-  margin-left: 1em;
+img{
+    box-align:center;
+    max-width: 45vw;
+    height: 30vw;
+}
+
+.meteor{
+  width: 25vw;
+  filter: invert(90%);
+  transform: rotate(-90deg);
+}
+.carousel{
+  text-align: center;
+}
+
+footer{
+  margin: 0;
+  width: 100%;
+}
+
+@import "susy";
+@import "compass/reset";
+
+.stars, .twinkling, .clouds {
+	position:fixed;
+	display:block;
+	top:0; bottom:0;
+	left:0; right:0;
+	width:100%; height:110%;
+}
+
+.stars {
+	z-index: -3;
+	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+}
+
+.twinkling{
+	z-index: -2;
+	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
+	animation: move-twink-back 200s linear infinite;
+}
+
+.clouds{
+	z-index: -1;
+    background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+	animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
+}
+
+@media(pointer:none), (pointer:coarse) {
+  .right, .last, .left{
+    width: 5vw;
+  }
+  .right, .last, .left > img{
+    width: 5vw;
+    display: none;
+  }
+  .card{
+    width: 80vw;
+  }
+  p{
+    font-size: 3rem;
+  }
+  .main-container{
+    justify-content: center;
+  }
 }

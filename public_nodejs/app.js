@@ -85,8 +85,9 @@ server.on('error',(err)=> {
   console.error('Server error:', err );
 });
 
-const hostname = '127.0.0.1';
-const port = 80;
+// const hostname = '127.0.0.1';
+const hostname='192.168.8.51';
+const port = 8080;
 
 
 
